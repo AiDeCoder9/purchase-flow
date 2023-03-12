@@ -17,7 +17,7 @@ $secondary: #777777;
 $light: #dcdcdc;
 $info: #eaf3ff;
 $dark: #1b2f50;
-$border-color: #d2dae5;
+$border-color: #dbdbdb;
 $body-bg: #ececec;
 
 // base font family
@@ -32,7 +32,7 @@ $btn-font-weight: 700;
 $input-color: #5e6c84;
 $input-bg: #fff;
 $input-border-width: 1px;
-$input-border-radius: 0;
+$input-border-radius: 0.375rem;
 $input-border-color: $border-color;
 $input-line-height: 1.5;
 $input-btn-line-height: $input-line-height;
@@ -51,6 +51,7 @@ $btn-line-height: $input-line-height;
 $btn-font-size: $input-font-size;
 $btn-padding-y: $input-padding-y;
 $btn-padding-x: $input-padding-x;
+$btn-border-radius: 0;
 
 $input-placeholder-color: #5e6c84;
 $form-group-margin-bottom: 1rem;

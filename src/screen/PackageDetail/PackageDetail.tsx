@@ -8,6 +8,7 @@ import { publicPath } from '@/routes/publicRoutes';
 import Footer from '@/components/layout/Footer';
 import Main from '@/components/display/Main';
 import { MdOutlineForum } from 'react-icons/md';
+import { CiBookmark } from 'react-icons/ci';
 export default function PackageDetail() {
   const { packageId } = useParams();
   const packageDetail = LLApiClient.getPackage(packageId) as IPackageItem;
@@ -52,6 +53,16 @@ export default function PackageDetail() {
                 {packageDetail.customizations.map((item) => {
                   return <Customization {...item} key={item.title} />;
                 })}
+              </div>
+              <div className="card">
+                <h6>Need a moment?</h6>
+                <p>
+                  Keep all your selections by saving this video to Your Saves, then come back
+                  anytime and pick up right where you left off.
+                </p>
+                <Link to="/" className="link">
+                  <CiBookmark color="#0766cc" /> Save for later
+                </Link>
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@
     text-align: center;
     padding: 3.25rem 1rem;
     margin-top: 3.25rem;
-    border: 1px solid #dbdbdb;
+    border: 1px solid $border-color;
     h4 {
       margin-bottom: 0.75rem;
       color: #555555;
@@ -28,7 +28,7 @@
 }
 
 .category {
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color;
   background-color: white;
   border-radius: 0.625rem;
   margin-top: 1rem;
@@ -50,7 +50,7 @@
 }
 
 .package {
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color;
   border-radius: 0.625rem;
   background-color: white;
   height: 100%;
@@ -150,7 +150,7 @@
 .forum {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid $border-color;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   &-title {
@@ -164,7 +164,7 @@
 
 .detail {
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid $border-color;
   .title {
     @include rfs(20px);
     font-weight: 700;
@@ -182,8 +182,28 @@
 
 .customization {
   padding-top: 1.5rem;
+  &-item {
+    margin-bottom: 2rem;
+  }
   &-title {
+    @include rfs(16px);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
   }
   &-link {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 1.25rem;
+  h6 {
+    @include rfs(14px);
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  p {
+    margin-bottom: 0.75rem;
   }
 }
