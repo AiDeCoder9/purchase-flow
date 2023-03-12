@@ -1,0 +1,19 @@
+.header {
+  background-color: white;
+  padding: 0.625rem 1.25rem;
+  display: flex;
+  height: 3.25rem;
+  border-bottom: 1px solid $body-bg;
+  .logo {
+    background-color: #ededed;
+    width: 8.75rem;
+    height: 2rem;
+    margin-left: auto;
+  }
+  &-buttons {
+    margin-left: auto;
+    .btn {
+      color: #808080;
+    }
+  }
+}
